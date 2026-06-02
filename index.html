@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MemeWatch</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-slate: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --text-dim: #64748b;
+            --primary: #6366f1;
+            --primary-light: #e0e7ff;
+            --accent: #10b981;
+            --accent-light: #d1fae5;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-slate);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: var(--card-bg);
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top decorative accent bar */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #6366f1, #3b82f6, #10b981);
+        }
+
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, var(--primary), #3b82f6);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.88rem;
+            color: var(--text-dim);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-item i {
+            color: var(--primary);
+        }
+
+        .highlight-box {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            color: #312e81;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box strong {
+            color: #1e1b4b;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .badge-zero-data {
+            background-color: var(--accent-light);
+            color: #065f46;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 3px 10px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.78rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2 i {
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            color: #334155;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #4f46e5;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 35px 0;
+        }
+
+        .footer {
+            margin-top: 50px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-dim);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 30px 20px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+            .container::before {
+                display: none;
+            }
+            a {
+                color: black;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="logo-text">MemeWatch</div>
+            </div>
+            <h1>Privacy Policy for MemeWatch</h1>
+            <div class="meta-info">
+                <div class="meta-item"><i class="fa-solid fa-calendar-day"></i> Last updated: June 2, 2026</div>
+                <div class="meta-item"><i class="fa-solid fa-mobile-screen-button"></i> Platform: Mobile App</div>
+                <div class="meta-item"><i class="fa-solid fa-earth-asia"></i> Region: Global / Taiwan</div>
+            </div>
+        </header>
+
+        <!-- Highlight Privacy Declaration -->
+        <div class="badge-zero-data">
+            <i class="fa-solid fa-user-shield"></i> 100% Zero Data Collection
+        </div>
+        <div class="highlight-box">
+            <strong>Ultimate Privacy Guarantee</strong>
+            We do not collect, store, share, upload, or process any of your personal details, device data, or metadata. Any files or custom configurations you create in the app stay strictly local to your device and are never sent anywhere.
+        </div>
+
+        <p>This Privacy Policy explains how <strong>MemeWatch</strong> ("we", "our", or "us"), owned and operated by an <strong>Individual</strong> based in <strong>Taiwan</strong>, manages user privacy. It outlines our operational policies regarding data collection, payments, and legal regulations.</p>
+        
+        <p>We designed the MemeWatch application with privacy by design. We believe that your private preferences should remain entirely yours.</p>
+
+        <hr>
+
+        <h2><i class="fa-solid fa-database"></i> 1. Collection of Personal Information</h2>
+        <p><strong>We collect absolutely NO personal data.</strong></p>
+        <p>The application is designed specifically so that it does not collect, record, log, upload, or transmit any of your personal details, device identifiers, system settings, location coordinates, files, or pictures. No registration, user account sign-up, or login is required to use the application. We do not host or operate any server-side database that maintains user records or profiles.</p>
+        <p>All application preferences, records, configurations, or custom assets that you create or configure inside the application remain strictly stored on your own local device storage and are never uploaded to us or any external third parties.</p>
+
+        <h3>1.2 Correspondence Details</h3>
+        <p>If you reach out to us directly for customer support via email, we will only use your email address and any attachments you send solely to address your technical inquiries or requests. This information is deleted immediately after solving your query and is never shared, rented, sold, or used for commercial marketing purposes.</p>
+
+        <h3>1.3 Analytics & Cookies</h3>
+        <p>MemeWatch does not use cookies, advertising tracking identifiers, web beacons, or third-party digital analytics frameworks (such as Google Analytics) inside the application. Your usage statistics are completely anonymous and untracked.</p>
+
+        <h2><i class="fa-solid fa-credit-card"></i> 2. Online Payments & Secure Transactions</h2>
+        <p>MemeWatch is offered as a premium application which may include a one-time purchase. However, we do not directly process, handle, or store any of your payment card information, credit card numbers, billing addresses, or transactional details.</p>
+        <p>All billing and transactions are processed entirely and securely by the official mobile stores: <strong>Google Play Billing</strong> and/or <strong>Apple App Store In-App Purchases</strong>. Payment is handled on your device through your standard system-integrated account under their respective strict security mechanisms, encryption protocols, and privacy policies.</p>
+        <p>We only receive notification of transaction success or purchase tokens from the platform, containing zero personal identifiers. For more information, please review the privacy policies of Google Play or Apple App Store.</p>
+
+        <h2><i class="fa-solid fa-scale-balanced"></i> 3. International Compliance & Privacy Frameworks</h2>
+        <p>Since MemeWatch collects absolutely no personal data, you automatically enjoy the highest level of privacy protection globally. Here is how our data practices align with the major frameworks:</p>
+
+        <h3>3.1 GDPR Compliance (European Union)</h3>
+        <p>Under the General Data Protection Regulation (GDPR), individuals are guaranteed crucial rights. Because we collect no data, there is no processing, storage, or sharing of personal data taking place, satisfying GDPR requirements automatically. You have the right to inspect, but since no data is collected, no records exist for extraction.</p>
+
+        <h3>3.2 CalOPPA Compliance (California Online Privacy Protection)</h3>
+        <p>CalOPPA requires commercial apps and websites to display a visible privacy policy specifying effective dates and tracking parameters. We comply fully by declaring our effective date of June 2, 2026 and providing detailed parameters of operations. We honor "Do Not Track" settings.</p>
+
+        <h3>3.3 CCPA Compliance (California Consumer Privacy Act)</h3>
+        <p>Under the CCPA, California consumers have the right to request disclosure of what personal information is collected, request its deletion, and opt-out of any sales of personal information. We declare that we do not collect, store, or sell any consumer personal information whatsoever.</p>
+
+        <h2><i class="fa-solid fa-child-reaching"></i> 4. Children's Online Privacy Protection (COPPA)</h2>
+        <p>Our application is safe for families and children. Because the application collects absolutely no personal data of any kind, we are 100% compliant with the Children's Online Privacy Protection Act (COPPA). We do not collect, log, or share any personal information belonging to children under 13.</p>
+
+        <h2><i class="fa-solid fa-paper-plane"></i> 5. Contact & Support Channels</h2>
+        <p>If you have any questions, suggestions, or compliance requests regarding this Privacy Policy, please feel free to reach out to us:</p>
+        <ul>
+            <li>By Email: <a href="mailto:miki200211@gmail.com">miki200211@gmail.com</a></li>
+            <li>By Github Repository: <a href="https://github.com/miki200211/MemeWatch-Privacy-Policy" target="_blank" rel="noopener noreferrer">https://github.com/miki200211/MemeWatch-Privacy-Policy</a></li>
+        </ul>
+
+        <footer class="footer">
+            <p>&copy; 2026 MemeWatch. Built for compliance. Protected with 100% client-side local privacy.</p>
+        </footer>
+    </div>
+</body>
+</html>
